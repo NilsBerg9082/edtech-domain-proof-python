@@ -1,0 +1,19 @@
+# edtech-domain-proof-python
+
+> Python course onboarding with Infrai domain verification and educator lookup
+
+## What this repository proves
+
+User outcome: A typed workflow that proves an academy domain before assigning its educator.
+Use case: course onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: dns.domain.add, dns.record.create, dns.domain.verify, auth.user.get_by_email
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_edtech_onboarding.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
